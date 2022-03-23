@@ -299,7 +299,7 @@ public class login extends javax.swing.JFrame {
     }//GEN-LAST:event_passTxtMousePressed
 
     private void loginBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginBtnTxtMouseClicked
-        javax.swing.JOptionPane.showMessageDialog(null, "Ha ingresadocon el usuario y contraseña:"
+        javax.swing.JOptionPane.showMessageDialog(null, "Ha ingresado con el usuario y contraseña:"
                 + "\nUsuario: " + usertxt.getText()
                 + "\nContraseña: " + String.valueOf(passTxt.getPassword()));
     }//GEN-LAST:event_loginBtnTxtMouseClicked
