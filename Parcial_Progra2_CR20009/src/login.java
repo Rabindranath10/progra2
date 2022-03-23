@@ -1,6 +1,7 @@
 
 import java.awt.Color;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -299,9 +300,16 @@ public class login extends javax.swing.JFrame {
     }//GEN-LAST:event_passTxtMousePressed
 
     private void loginBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginBtnTxtMouseClicked
-        javax.swing.JOptionPane.showMessageDialog(null, "Ha ingresado con el usuario y contraseña:"
+        if (usertxt.getText().equals("Ingrese su nombre de usuario") || String.valueOf(passTxt.getPassword()).equals("**********")) {
+            JOptionPane.showMessageDialog(null, "Deben llenar todos los campos solicitados");
+        } else {
+            javax.swing.JOptionPane.showMessageDialog(null, "Ha ingresado con el usuario y contraseña:"
                 + "\nUsuario: " + usertxt.getText()
                 + "\nContraseña: " + String.valueOf(passTxt.getPassword()));
+        }
+        
+        
+        
     }//GEN-LAST:event_loginBtnTxtMouseClicked
 
     /**
