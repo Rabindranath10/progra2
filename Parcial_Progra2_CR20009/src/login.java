@@ -302,6 +302,8 @@ public class login extends javax.swing.JFrame {
     private void loginBtnTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginBtnTxtMouseClicked
         if (usertxt.getText().equals("Ingrese su nombre de usuario") || String.valueOf(passTxt.getPassword()).equals("**********")) {
             JOptionPane.showMessageDialog(null, "Deben llenar todos los campos solicitados");
+        } else if (usertxt.getText().isEmpty() || String.valueOf(passTxt.getPassword()).isEmpty()) {
+             JOptionPane.showMessageDialog(null, "Deben llenar todos los campos solicitados");
         } else {
             javax.swing.JOptionPane.showMessageDialog(null, "Ha ingresado con el usuario y contraseña:"
                 + "\nUsuario: " + usertxt.getText()
